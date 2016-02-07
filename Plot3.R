@@ -19,7 +19,7 @@ with(filt.data, plot(DateTime, Sub_metering_1, type="l", ylab = "Energy sub mete
                      xlab = "", cex.lab=0.75, cex.axis=0.75))
 points(filt.data$DateTime, filt.data$Sub_metering_3, col = "blue", type="l")
 points(filt.data$DateTime, filt.data$Sub_metering_2, col = "orange", type="l")
-legend("topright",col = c("black", "orange", "blue"),legend = 
+legend("topright",col = c("black", "orange", "blue"),inset = 0.05,0.05, legend = 
          c("Sub_metering_1", "Sub_metering_2","Sub_metering_3"), cex=0.60,lty=1)
 dev.copy(png, file = "plot3.png")
 dev.off()
